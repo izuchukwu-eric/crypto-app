@@ -1,10 +1,16 @@
 import React from "react";
-import { View, Text } from "react-native";
+import styles from "./styles";
+import { View, Text, Image } from "react-native";
+const image = require("../../../assets/images/Saly-1.png");
 
 const HomeScreen = () => {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>HomeScreen Component</Text>
+    <View style={styles.root}>
+      <Image style={styles.image} source={image} />
+      <Text style={styles.title}>Welcome To CoinBase</Text>
+      <Text style={styles.subTitle}>
+        Trade crypto P2P, connect with traders, share your thoughts
+      </Text>
     </View>
   );
 };
