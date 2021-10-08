@@ -33,21 +33,71 @@ const portfolioCoins = [
     amount: 6942,
     valueUSD: 69.42,
   },
+  {
+    id: "4",
+    name: "Smart Chain",
+    image:
+      "https://images.unsplash.com/photo-1625806335347-569c6ba84d9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+    symbol: "BNB",
+    amount: 6942,
+    valueUSD: 69.42,
+  },
+  {
+    id: "5",
+    name: "Smart Chain",
+    image:
+      "https://images.unsplash.com/photo-1625806335347-569c6ba84d9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+    symbol: "BNB",
+    amount: 6942,
+    valueUSD: 69.42,
+  },
+  {
+    id: "6",
+    name: "Smart Chain",
+    image:
+      "https://images.unsplash.com/photo-1625806335347-569c6ba84d9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+    symbol: "BNB",
+    amount: 6942,
+    valueUSD: 69.42,
+  },
+  {
+    id: "7",
+    name: "Smart Chain",
+    image:
+      "https://images.unsplash.com/photo-1625806335347-569c6ba84d9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+    symbol: "BNB",
+    amount: 6942,
+    valueUSD: 69.42,
+  },
+  {
+    id: "8",
+    name: "Smart Chain",
+    image:
+      "https://images.unsplash.com/photo-1625806335347-569c6ba84d9a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+    symbol: "BNB",
+    amount: 6942,
+    valueUSD: 69.42,
+  },
 ];
 
 const PortfolioScreen = () => {
   return (
     <View style={styles.root}>
-      <Image style={styles.image} source={image} />
-      <View style={styles.balanceContainer}>
-        <Text style={styles.title}>Profolio balance</Text>
-        <Text style={styles.amount}>$69.420</Text>
-      </View>
-
       <FlatList
         style={{ width: "100%" }}
         data={portfolioCoins}
         renderItem={({ item }) => <PortfolioCoin portfolioCoin={item} />}
+        showsVerticalScrollIndicator={false}
+        ListHeaderComponentStyle={{ alignItems: "center" }}
+        ListHeaderComponent={() => (
+          <>
+            <Image style={styles.image} source={image} />
+            <View style={styles.balanceContainer}>
+              <Text style={styles.title}>Profolio balance</Text>
+              <Text style={styles.amount}>$69.420</Text>
+            </View>
+          </>
+        )}
       />
     </View>
   );
