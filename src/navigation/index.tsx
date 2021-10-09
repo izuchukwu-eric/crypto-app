@@ -35,6 +35,7 @@ import PortfolioScreen from "../screens/PortfolioScreen";
 import MarketScreen from "../screens/MarketScreen";
 import RankingsScreen from "../screens/RankingsScreen";
 import ProfileScreen from "../screens/ProfileScreen";
+import CoinDetailScreen from "../screens/CoinDetailScreen";
 
 export default function Navigation({
   colorScheme,
@@ -64,6 +65,11 @@ function RootNavigator() {
         name="Root"
         component={BottomTabNavigator}
         options={{ headerShown: false }}
+      />
+      <Stack.Screen
+        name="CoinDetails"
+        component={CoinDetailScreen}
+        options={{ title: "Coin Details" }}
       />
       <Stack.Screen
         name="NotFound"
