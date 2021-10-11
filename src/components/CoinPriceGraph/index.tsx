@@ -16,7 +16,7 @@ const CoinPriceGraph = ({ dataString }: CoinPriceGraphProps) => {
           labels: ["-7d", "-6d", "-5d", "-4d", "-3d", "-2d", "-1d", "now"],
           datasets: [
             {
-              data,
+              data, //we call data here
             },
           ],
         }}
