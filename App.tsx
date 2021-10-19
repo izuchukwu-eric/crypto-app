@@ -6,6 +6,11 @@ import useCachedResources from "./src/hooks/useCachedResources";
 import useColorScheme from "./src/hooks/useColorScheme";
 import Navigation from "./src/navigation";
 
+//aws
+import Amplify from "aws-amplify";
+import config from "./src/aws-exports";
+Amplify.configure(config);
+
 export default function App() {
   const isLoadingComplete = useCachedResources();
   const colorScheme = useColorScheme();
