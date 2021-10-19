@@ -22,6 +22,7 @@ export type RootStackParamList = {
   NotFound: undefined;
   CoinDetails: undefined;
   CoinExchange: undefined;
+  Welcome: undefined;
 };
 
 export type RootStackScreenProps<Screen extends keyof RootStackParamList> =
