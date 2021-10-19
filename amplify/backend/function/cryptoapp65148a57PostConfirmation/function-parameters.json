@@ -1,0 +1,17 @@
+{
+  "trigger": true,
+  "modules": [
+    "custom"
+  ],
+  "parentResource": "cryptoapp65148a57",
+  "functionName": "cryptoapp65148a57PostConfirmation",
+  "resourceName": "cryptoapp65148a57PostConfirmation",
+  "parentStack": "auth",
+  "triggerEnvs": [],
+  "triggerDir": "C:\\Users\\DELL\\AppData\\Roaming\\nvm\\v12.13.0\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-category-auth\\provider-utils\\awscloudformation\\triggers\\PostConfirmation",
+  "triggerTemplate": "PostConfirmation.json.ejs",
+  "triggerEventPath": "PostConfirmation.event.json",
+  "roleName": "cryptoapp65148a57PostConfirmation",
+  "skipEdit": true,
+  "enableCors": false
+}

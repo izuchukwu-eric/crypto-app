@@ -10,6 +10,19 @@
       "StackName": "amplify-cryptoapp-dev-105524",
       "StackId": "arn:aws:cloudformation:us-east-2:161904080703:stack/amplify-cryptoapp-dev-105524/b3d01530-30c2-11ec-9863-0a6700aba846",
       "AmplifyAppId": "deehmurxklndw"
+    },
+    "categories": {
+      "auth": {
+        "cryptoapp65148a57": {
+          "googleClientId": "177076079668-26ajg3aou9l5q7l69tbli2c4fcqhprks.apps.googleusercontent.com"
+        }
+      },
+      "function": {
+        "cryptoapp65148a57PostConfirmation": {
+          "deploymentBucketName": "amplify-cryptoapp-dev-105524-deployment",
+          "s3Key": "amplify-builds/cryptoapp65148a57PostConfirmation-514f4a6f317865652b6f-build.zip"
+        }
+      }
     }
   }
 }
